@@ -26,8 +26,10 @@ botaoExcluir.addEventListener("click",()=>{
 });
 
 function alertarERedirecionar(nome){
-    alert(`Documento ${nome} excluido `);
-    window.location.href="/";
+    if(nome===nomeDocumento){
+        alert(`Documento ${nome} excluido `);
+        window.location.href="/";
+    }
 }
 
 
